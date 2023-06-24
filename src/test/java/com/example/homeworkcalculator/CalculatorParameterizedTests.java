@@ -14,7 +14,7 @@ public class CalculatorParameterizedTests {
     @CsvSource({
             "6,2,3",
             "10,5,2",
-            "5,0,2"
+            "5,1,5"
     })
     void parameterizedTestDivision(int first, int second, int result) {
         assertEquals(result, calculatorServise.division(first, second));

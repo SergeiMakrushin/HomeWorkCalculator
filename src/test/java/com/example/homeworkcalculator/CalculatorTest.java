@@ -12,7 +12,7 @@ public class CalculatorTest {
 
     @Test
     void checkExceptionDivision() {
-        assertThrows(ApplicationContextException.class,
+        assertThrows(IllegalArgumentException.class,
                 () -> calculatorServise.division(1, 0), "НЕПРАВИЛЬНОЕ ИСКЛЮЧЕНИЕ, ТРЕБУЕТСЯ IllegalArgumentException"
         );
     }
@@ -24,8 +24,8 @@ public class CalculatorTest {
     }
     @Test
     public void divisionTest2() {
-        int result = calculatorServise.division(5, 0);
-        assertEquals(6, result);
+        int result = calculatorServise.division(8, 2);
+        assertEquals(4, result);
     }
 
 
